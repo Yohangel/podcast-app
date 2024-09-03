@@ -1,11 +1,12 @@
-import "./App.css";
+import React from "react";
+import AppRouter from "@/ui/routes/AppRouter";
 
-function App() {
+const App: React.FC = () => {
   return (
-    <>
-      <h1>Vite + React</h1>.
-    </>
+    <div className="App">
+      <AppRouter />
+    </div>
   );
-}
+};
 
 export default App;
