@@ -1,0 +1,69 @@
+@import '../base/variables';
+@import '../base/mixins';
+
+.podcast-detail {
+    width: 100%;
+  h4 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: $spacer; 
+  }
+
+  &__table {
+    box-sizing: border-box;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr auto auto; // La primera columna se expande, las otras se ajustan
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: $spacer $spacer $spacer-lg;
+  }
+
+  &__header, &__row {
+    display: contents; // Asegura que las columnas mantengan su estructura de grid
+  }
+
+  &__header {
+    font-weight: bold;
+    background-color: #ffffff;
+    padding: 10px 0;
+  }
+
+  &__column {
+    padding: 10px;
+    background-color: inherit;
+  }
+
+  &__title {
+    text-align: left;
+  }
+
+  &__date, &__duration {
+    text-align: center;
+    white-space: nowrap; 
+  }
+
+  &__row--even {
+    background-color: #ffffff;
+  }
+
+  &__row--odd {
+    background-color: #f7f7f7; 
+  }
+
+  a {
+    text-decoration: none;
+    color: $primary-color;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

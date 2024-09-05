@@ -8,7 +8,7 @@ export const fetchPopularPodcasts = async (): Promise<any> => {
   if (response.status !== 200) {
     throw new Error('Failed to fetch podcasts');
   }
-  console.log(response)
+  
   return JSON.parse(response.data.contents);
 };
 

@@ -1,0 +1,28 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @mixin gradient-bg($start-color, $end-color) {
+    background: linear-gradient(90deg, $start-color 0%, $end-color 100%);
+  }
+  
+  @mixin respond-to($breakpoint) {
+    @if $breakpoint == small {
+      @media (max-width: 600px) {
+        @content;
+      }
+    }
+    @else if $breakpoint == medium {
+      @media (max-width: 900px) {
+        @content;
+      }
+    }
+    @else if $breakpoint == large {
+      @media (max-width: 1200px) {
+        @content;
+      }
+    }
+  }
+  

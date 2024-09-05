@@ -1,0 +1,22 @@
+@import '../base/variables';
+@import '../base/mixins';
+
+.podcast-info {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: $spacer $spacer $spacer-lg;
+    width: 250px;
+
+    img {
+        width: 100%;
+        border-radius: 15px;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+}

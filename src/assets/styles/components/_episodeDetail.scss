@@ -1,0 +1,25 @@
+@import '../base/variables';
+@import '../base/mixins';
+
+.episode-detail {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: $spacer;
+    width: 100%;
+    box-sizing: border-box;
+
+    h5 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    p {
+        margin-bottom: 20px;
+    }
+
+    audio {
+        width: 100%;
+    }
+}
