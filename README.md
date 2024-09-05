@@ -18,18 +18,12 @@ cd podcast-app
 
 2. Install the dependencies:
 
-npm install
-# or if using yarn
-yarn install
+npm install or yarn install
 
 3. Running the Application
 
 Development Mode
-npm run dev
-# or if using yarn
-yarn dev
+npm run dev or yarn dev
 
 Production Mode
-npm run build
-# or if using yarn
-yarn build
+npm run build or yarn build
